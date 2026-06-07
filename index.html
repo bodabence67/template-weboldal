@@ -1,223 +1,190 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>Sorozat ajánló</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="img/logo2.png">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gasoek+One&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body id="myPage">
 
-<!-- Sidebar on click -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
-    <i class="fa fa-remove"></i>
-  </a>
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
-  <a href="#" class="w3-bar-item w3-button">Link 4</a>
-  <a href="#" class="w3-bar-item w3-button">Link 5</a>
-</nav>
-
 <!-- Navbar -->
 <div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
-  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Csapat</a>
-  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projektünk</a>
-  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Adományok</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kapcsolat</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-    
+ <div class="w3-bar w3-left-align w3-large" style="background-color: rgba(163, 163, 204, 0.8);">
+  <a href="#" class="w3-bar-item purple1 purple1:hover" style="text-decoration: none; padding: 11.5px 20px; margin: 5px;box-shadow: 0 4px 8px rgba(150, 150, 187, 0.5);"><img src="img/logo.png" alt="Logo" style="margin-right: 15px; width:30px;height:20px; padding: -5px;"> Kezdőlap</a>
+  <a href="#team" class="w3-bar-item purple1 purple1:hover" style="text-decoration: none; padding: 11.5px 20px; margin: 5px;box-shadow: 0 4px 8px rgba(150, 150, 187, 0.5);">Csapatunk</a>
+  <a href="#work" class="w3-bar-item purple1 purple1:hover" style="text-decoration: none; padding: 11.5px 20px; margin: 5px;box-shadow: 0 4px 8px rgba(150, 150, 187, 0.5);">Mi tervünk</a>
+  <a href="#pricing" class="w3-bar-item purple1 purple1:hover" style="text-decoration: none; padding: 11.5px 20px; margin: 5px;box-shadow: 0 4px 8px rgba(150, 150, 187, 0.5);"> Sorozatok véleményei</a>
+    <div class="w3-dropdown-hover w3-hide-small">  
     </div>
   </div>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
  </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="#team" class="w3-bar-item w3-button">Team</a>
-    <a href="#work" class="w3-bar-item w3-button">Work</a>
-    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    <a href="#" class="w3-bar-item w3-button">Search</a>
+    <a href="#team" class="w3-bar-item w3-button">Csapatunk</a>
+    <a href="#work" class="w3-bar-item w3-button">Mi tervünk</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Sorozatok véleményei</a>
+    <a href="#contact" class="w3-bar-item w3-button">Kapcsolat</a>
   </div>
 </div>
 
 <!-- Image Header -->
-<div class="w3-display-container w3-animate-opacity">
-  <img src="img/game-of-thrones-ultrawide-pack-5120x1440-v0-idi9xj6id0g91.png" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
-  
+<div class="csapat-container">
+    <h2 class="cim betutipus">Sorozat ajánló</h2>
+    <h3 class="leiras betutipus">Nem tudod, mit nézz? Segítünk megtalálni a tökéletes sorozatot!</h3>  
 </div>
 
-<!-- Modal -->
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content w3-card-4 w3-animate-top">
-    <header class="w3-container w3-teal w3-display-container"> 
-      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
-      <h4>Oh snap! We just showed you a modal..</h4>
-      <h5>Because we can <i class="fa fa-smile-o"></i></h5>
-    </header>
-    <div class="w3-container">
-      <p>Cool huh? Ok, enough teasing around..</p>
-      <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
-    </div>
-    <footer class="w3-container w3-teal">
-      <p>Modal footer</p>
-    </footer>
-  </div>
-</div>
+
 
 <!-- Team Container -->
-<div class="w3-container w3-padding-64 w3-center" id="team">
-<h2>Csapatunk</h2>
-<p>A mi csapatunk:</p>
+<div class="w3-center" id="team">
+<h1 class="betutipus" style="font-size: 36px; background-color: #5c5c99; margin: 0; padding: 20px; color: #ddddff;">Csapatunk</h1>
 
-<div class="w3-row"><br>
+
+<div class="w3-row" style="margin-top: 0px; background-color: #5c5c99;"><br>
 
 <div class="w3-quarter">
-  <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Johnny Walker</h3>
-  <p>Weblap szerkesztő</p>
+  <img src="human.png" alt="Boss" style="width: 40%; border: 3px solid #a3a3cc; border-radius: 10%;" class="w3-hover-opacity">
+  <h3 class="betutipus lilairas">Johnny Walker</h3>
+  <p class="lilairas">Weblap szerkesztő</p>
 </div>
 
 <div class="w3-quarter">
-  <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Rebecca Flex</h3>
-  <p>Weblap Tervető</p>
+  <img src="female20121023482727295.jpg" alt="Boss" style="width: 40%; border: 3px solid #a3a3cc; border-radius: 10%;" class="w3-hover-opacity">
+  <h3 class="betutipus lilairas">Rebecca Flex</h3>
+  <p class="lilairas">Weblap Tervező</p>
 </div>
 
 <div class="w3-quarter">
-  <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Jan Ringo</h3>
-  <p>Információ gyüjtő</p>
+  <img src="human2.png" alt="Boss" style="width: 40%; border: 3px solid #a3a3cc; border-radius: 10%;" class="w3-hover-opacity">
+  <h3 class="betutipus lilairas">Jan Ringo</h3>
+  <p class="lilairas">Információ gyüjtő</p>
 </div>
 
 <div class="w3-quarter">
-  <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Kai Ringo</h3>
-  <p>Weblap Moderátor</p>
+  <img src="human3.png" alt="Boss" style="width: 40%; border: 3px solid #a3a3cc; border-radius: 10%;" class="w3-hover-opacity">
+  <h3 class="betutipus lilairas">Kai Ringo</h3>
+  <p class="lilairas" style=" padding-bottom: 100px;">Weblap Moderátor</p>
 </div>
-
 </div>
 </div>
 
 <!-- Work Row -->
-<div class="w3-row-padding w3-padding-64 w3-blue" id="work">
-
+<div class="w3-row-padding w3-padding-64" style="background-color: #ccccff;" id="work">
+  <h2 class="betutipus" style="color: #ffffff; padding: 20px; font-size: 50px; margin-left: 40%; margin-top: 0; text-shadow: 0 4px 8px rgba(168, 168, 168, 0.363);">Legnépszerűbb Sorozatok</h2>
+  
 <div class="w3-quarter">
-<h2>Mi tervünk</h2>
-<p class="feladat">A mi tervünk az az hogy egy olyan weblapot létrehozzunk, ahol sorozatnézőknek adunk ajánlatot hogy mit nézzenek meg. <span class="felkover">A sorozatok amelyek megjelennek a weboldalon globális vélemény alapján jöttek létre! </span>  </p>
+<h2  class="betutipus" style="color: #ffffff; padding: 10px; font-size: 64px;text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);">Mi tervünk:</h2>
+<p style="color: #ffffff; font-size: 28px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);">A mi tervünk az az hogy egy olyan weblapot létrehozzunk, ahol sorozatnézőknek adunk ajánlatot hogy mit nézzenek meg. <span class="felkover">A sorozatok amelyek megjelennek a weboldalon globális vélemény alapján jöttek létre! </span>  </p>
 </div>
 
 <div class="w3-quarter">
-<div class="w3-card w3-yellow">
-  <img src="/img/images.webp" alt="Snow" style="width:100%">
+<div class="w3-card card" style="background-color: #5c5c99;border: 3px solid #a3a3cc; border-radius: 7%;">
+  <img src="thewire.jpg" alt="Snow" style="width:100%; border-radius: 2.1em;">
   <div class="w3-container">
-  <h3>Leghíresebb Sorozatok</h3>
-  <h4>A drót</h4>
-  <p>A baltimore-i drogpiac, a drogdílerek és a bűnüldöző szervek szemszögéből.</p>
+  <h3 class="betutipus feheriras">A drót</h3>
+  <h4 class="betutipus feheriras">(2002-2008)</h4>
+  <p class="feheriras" style="font-weight: lighter; font-size: 18px; letter-spacing: 0.05em;">A sorozat a baltimore-i drogpiac világát mutatja be, egyaránt megszólaltatva a rendőrséget, a drogdílereket, a politikusokat és a média képviselőit. Egy kendőzetlenül őszinte és realisztikus történet a rendszerszintű problémákról és az amerikai nagyvárosi életről.</p>
   
   </div>
   </div>
 </div>
 
 <div class="w3-quarter">
-<div class="w3-card w3-yellow">
-  <img src="/img/got-iconic-images-18_2.jpg" alt="Lights" style="width:100%">
+<div class="w3-card card" style="background-color: #5c5c99; border: 3px solid #a3a3cc; border-radius: 7%;">
+  <img src="tronok-harca1.png" alt="Lights" style="width:100%; border-radius: 2.1em;">
   <div class="w3-container">
-  <h3>Leghíresebb Sorozatok</h3>
-  <h4>Trónok Harca</h4>
-  <p>Kilenc nemesi család harcol Westeros földjei feletti uralomért, miközben egy ősi ellenség évezredek szunnyadása után visszatér.</p>
+  <h3 class="betutipus feheriras">Trónok Harca</h3>
+  <h4 class="betutipus feheriras">(2011-2019)</h4>
+  <p class="feheriras" style="font-weight: lighter; font-size: 18px; letter-spacing: 0.05em;">George R. R. Martin világhírű fantasy regényei alapján készült epikus sorozat, amely Westeros hét királyságának trónjáért folyó kíméletlen harcot mutatja be. Politikai intrikák, sárkányok és egy északról fenyegető, ősi veszély szövik át ezt a lenyűgöző történetet.</p>
   </div>
   </div>
 </div>
 
 <div class="w3-quarter">
-<div class="w3-card w3-yellow">
-  <img src="/img/Breaking_Bad.webp" alt="Mountains" style="width:100%">
+<div class="w3-card card" style="background-color: #5c5c99;border: 3px solid #a3a3cc; border-radius: 7%;">
+  <img src="/breakingbad.jpg" alt="Mountains" style="width:100%; border-radius: 2.1em;">
   <div class="w3-container">
-  <h3>Leghíresebb Sorozatok</h3>
-  <h4>Totál Szívás</h4>
-  <p>
-Egy kémiatanár, akinél műthetetlen tüdőrákot diagnosztizálnak, metamfetamin gyártásába és értékesítésébe kezd egy volt diákjával, hogy biztosítsa családja jövőjét.</p>
+  <h3 class="betutipus feheriras">Totál szívás</h3>
+  <h4 class="betutipus feheriras">(2008-2013)</h4>
+  <p class="feheriras" style="font-weight: lighter; font-size: 18px; letter-spacing: 0.05em;">
+Minden idők egyik legjobb bűnügyi drámája, amely egy tüdőrákkal diagnosztizált, mindennapi kémiatanár morális bukását mutatja be. Hogy anyagilag biztosítsa családja jövőjét, egy volt diákjával társulva belép a veszélyes alvilágba, és könyörtelen drogkártell-vezérré válik.</p>
   </div>
   </div>
 </div>
 
 </div>
 
-<!-- Container -->
-<div class="w3-container" style="position:relative">
-  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-  style="position:absolute;top:-28px;right:24px">+</a>
-</div>
 
 <!-- Pricing Row -->
-<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
-    <h2 class="velemeny">Sorozatok Véleményei</h2>
+<div class="w3-row-padding w3-center w3-padding-60" id="pricing" style="background-color: #5c5c99;margin: 0;">
+    <h2 class="betutipus feheriras" style="background-color: #5c5c99;margin: 0; padding: 40px;">Sorozatok Véleményei</h2>
     
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme">
-          <p class="w3-xlarge">Hátrahagyottak</p>
-        </li>
-        <li class="w3-padding-16"><b>Forrás: IMDB</b> </li>
-        <li class="w3-padding-16"><b>233 ember találta ezt hasznosnak</b> </li>
-        <li class="w3-padding-16"><b>41 ember nem találta ezt hasznosnak</b> </li>
-        <li class="w3-padding-16">  
-         <p class="review">The Leftovers is not only one of the most underrated TV shows of all-time but it's one of the best tv shows of all-time! It takes place three years after the disappearance of 2% of the world population and follows the lives of people in a small town near New York and how they cope with fall out of the event and try to figure out what happen to their loved ones. I have to admit that it's not for everyone, if your looking for a fast pace show with a lot of action the this isn't for you. This is one of the best written & acted shows of all-time. All you have to do is read through the reviews to see how loved this show really is. If you haven't seen this amazing show yet then do yourself a favor and go watch this as soon as possible!</p>
+    <div class="w3-third feheriras velemeny">
+      <ul class="w3-ul">
+        <li style="border: 0;"><img src="hatrahagyottak.jpg" alt="Leftovers" style="width:80%; border-radius: 2.1em; border: 3px solid #a3a3cc; margin: 10px;box-shadow: 0px 0px 20px rgb(155, 155, 255);"></li>
+        <li class="w3-padding-16" style="border: 0;"><b style="font-size: 28px;">A hátrahagyottak</b> </li>
+        <li class="w3-padding-16" style="border: 0;"><b> IMDB értékelés: 8.3/10 <i class="fa fa-star" style="color: gold;"></i></b> </li>
+
+        <li class="w3-padding-16" style="border: 0;">  
+         <p style="font-size: 16px; line-height: 1.6;text-align: justify;">A Leftovers nemcsak minden idők egyik legkevésbé értékelt tévésorozata, de minden idők egyik legjobbja is! Három évvel a világ népességének 2%-ának eltűnése után játszódik, és egy New York közelében lévő kisvárosban élő emberek életét követi nyomon, azt, hogyan birkóznak meg az eseménnyel, és próbálják kitalálni, mi történik szeretteikkel. Be kell vallanom, hogy nem mindenkinek való, ha egy gyors tempójú, sok akciódús sorozatot keresel, akkor ez nem neked való. Ez minden idők egyik legjobban megírt és eljátszott sorozata. Csak el kell olvasnod a kritikákat, hogy lásd, mennyire szeretik ezt a sorozatot. Ha még nem láttad ezt a fantasztikus sorozatot, akkor tégy magadnak egy szívességet, és nézd meg amint lehet!</p>
           
-        </li>
-        <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large link"><a href="https://www.imdb.com/title/tt2699128/?ref_=ext_shr_lnk" target="_blank""><i class="fa fa-info-circle"></i> RÉSZLETEK </a> </button> 
-        </li>
-      </ul>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme-l2">
-          <p class="w3-xlarge">A Törvény Embere</p>
-        </li>
-        <li class="w3-padding-16"><b>Forrás: IMDB</b> </li>
-        <li class="w3-padding-16"><b>181 ember találta ezt hasznosnak</b> </li>
-        <li class="w3-padding-16"><b>13 ember nem találta ezt hasznosnak</b> </li>
-        <li class="w3-padding-16">
-          <p class="review">Justified is one of the most underrated and best tv shows I've ever seen and absolutely deserves all the great reviews and high ratings it gets! It's one of the rare shows where every season is as good as the others. Timothy Olyphant was perfect in this as Raylan Givens. I can't say enough about this phenomenal show except to go watch it, you will not be disappointed! Absolutely loved it! </p>
-        
-        </li>
-        <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-info circle"></i> RÉSZLETEK</button>
+        </li>        
+        <li class="w3-padding-16" style="border: 0;"><b>124 ember találta ezt hasznosnak</b> </li>
+        <li class="w3-padding-16" style="border: 0;"><b>41 ember nem találta ezt hasznosnak</b> </li>
+        <li>
+          <button class=" w3-padding-large link" style="border-radius: 15px;background-color: #5c5c99;"><a href="https://www.imdb.com/title/tt2699128/?ref_=ext_shr_lnk" target="_blank"" style="letter-spacing: 0.15em;"><i class="fa fa-info"></i> RÉSZLETEK </a> </button> 
         </li>
       </ul>
     </div>
-<div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme-l2">
-          <p class="w3-xlarge"></p>
-        </li>
-        <li class="w3-padding-16"><b>Forrás: IMDB</b> </li>
-        <li class="w3-padding-16"><b>181 ember találta ezt hasznosnak</b> </li>
-        <li class="w3-padding-16"><b>13 ember nem találta ezt hasznosnak</b> </li>
-        <li class="w3-padding-16">
-          <p class="review">Justified is one of the most underrated and best tv shows I've ever seen and absolutely deserves all the great reviews and high ratings it gets! It's one of the rare shows where every season is as good as the others. Timothy Olyphant was perfect in this as Raylan Givens. I can't say enough about this phenomenal show except to go watch it, you will not be disappointed! Absolutely loved it! </p>
-        
-        </li>
-        <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"> <a href=""></a><i class="fa fa-info-circle"></i> RÉSZLETEK</button>
-    
+    <div class="w3-third w3-margin-bottom feheriras velemeny">
+      <ul class="w3-ul">
+        <li style="border: 0;"><img src="image.png" alt="Justified" style="width:80%; border-radius: 2.1em; border: 3px solid #a3a3cc; margin: 10px;box-shadow: 0px 0px 20px rgb(155, 155, 255);"></li>
+        <li class="w3-padding-16" style="border: 0;"><b style="font-size: 28px;">A törvény Embere</b> </li>
+        <li class="w3-padding-16" style="border: 0;"><b> IMDB értékelés: 8.3/10 <i class="fa fa-star" style="color: gold;"></i></b> </li>
+
+        <li class="w3-padding-16" style="border: 0;">  
+         <p style="font-size: 16px; line-height: 1.6;text-align: justify;">Évek óta az egyik legjobb tévésorozat, amit láttam. Engem például nem érdekelt annyira a lövöldözés (ami egyébként bőségesen van), mint a kiváló párbeszédek és a színészi játék. Különösen a színészi játék kiemelkedően jó, egyetlen karakter sem téved a szerepében, őszintén szólva, még egy kutya esetében is, ha egy jelenetben látod a sorozatot, az az érzésed támad, hogy pontosan oda való. Ami a párbeszédeket illeti, azok annyira jók, hogy ez valójában az egyetlen hibája ennek a sorozatnak. Nagyon valószínűtlennek tűnik, hogy a ravasz vidékiek ilyen hatalmas udvarias irónia és jól elhelyezett idézetek arzenáljával rendelkezzenek, egészen a jól képzett emberek határáig, mégis újra és újra a következő ember tervének dőljenek be, vagy egyszerűen a saját butaságuk kezébe kerüljenek. Mindenesetre nem tudom eléggé felszavazni ezt a sorozatot, és csak azt tudom javasolni, hogy helyezkedjetek el kényelmesen bármelyik zsíros kanapén, amitek van, és készüljetek fel arra, hogy Harlanba, Kentuckyba költöztetne</p>
+          
+        </li>        
+        <li class="w3-padding-16" style="border: 0;"><b>172 ember találta ezt hasznosnak</b> </li>
+        <li class="w3-padding-16" style="border: 0;"><b>9 ember nem találta ezt hasznosnak</b> </li>
+        <li>
+          <button class=" w3-padding-large link" style="border-radius: 15px;background-color: #5c5c99;"><a href="https://www.imdb.com/title/tt1489428/?ref_=ext_shr_lnk" target="_blank" style="letter-spacing: 0.15em;"><i class="fa fa-info"></i> RÉSZLETEK </a> </button> 
         </li>
       </ul>
     </div>
-</div>
+    <div class="w3-third w3-margin-bottom feheriras velemeny">
+      <ul class="w3-ul">
+        <li style="border: 0;"><img src="image copy.png" alt="tiu" style="width:80%; border-radius: 2.1em; border: 3px solid #a3a3cc; margin: 10px;box-shadow: 0px 0px 20px rgb(155, 155, 255);"></li>
+        <li class="w3-padding-16" style="border: 0;"><b style="font-size: 28px;">Rólunk Szól</b> </li>
+        <li class="w3-padding-16" style="border: 0;"><b> IMDB értékelés: 8.7/10 <i class="fa fa-star" style="color: gold;"></i></b> </li>
+
+        <li class="w3-padding-16" style="border: 0;">  
+         <p style="font-size: 16px; line-height: 1.6;text-align: justify;">Három nappal ezelőtt végre összeomlottam, és megnéztem a This Is Us-t. Azt hiszem, féltem, hogy giccses és érzelgős lesz... ami néha abszolút az is. De egy olyan sorozatot akartam nézni, ami egészséges és tisztességes... és abszolút az is. Nincs benne erőszak vagy káromkodás. Nincsenek kínos szexjelenetek. És mégis szórakoztató. Szóval igen. Most állandóan nézem a This Is Us-t a Netflixen.
 
 
+Nincs igazán kedvenc karakterem (ha lenne, Kevin lenne). De van egy kedvenc színészem: Sterling Brown. Ugyan már! Ő játssza Randallt, és el tudja játszani őt heteroszexuálisan, bolondosan vagy intellektuálisan, és minden érzelmet képes egy szempillantás alatt felizgatni. Ő egy szupertehetséges színész egy nagyon tehetséges színészekből álló gárdában. Jelenleg a 3. évad végén járok, és szegény Beth (Randall felesége) nem kapta meg a titkos 24 órás magányos szünetét Randalltól és a családtól. Nagyon csalódott voltam Beth miatt, mert nagyon szüksége volt erre a szünetre.
+
+
+Mindenesetre, számtalanszor sírtam már, miközben ezt a sorozatot néztem. Nagyon jó. 😂 De ha a családi viszálykodás és a családi összetartás nem az igazi, akkor érdemes kihagyni. Ennyi évbe telt, mire felfedeztem ezt a gyönyörű kis gyöngyszemet.</p>
+          
+        </li>        
+        <li class="w3-padding-16" style="border: 0;"><b>17 ember találta ezt hasznosnak</b> </li>
+        <li class="w3-padding-16" style="border: 0;"><b>1 ember nem találta ezt hasznosnak</b> </li>
+        <li>
+          <button class="w3-padding-large link" style="border-radius: 15px;background-color: #5c5c99;"><a href="https://www.imdb.com/title/tt5555260/?ref_=ext_shr_lnk" target="_blank"" style="letter-spacing: 0.15em;"><i class="fa fa-info"></i> RÉSZLETEK </a> </button> 
+        </li>
+      </ul>
+    </div>
 <script>
 // Script for side navigation
 function w3_open() {
