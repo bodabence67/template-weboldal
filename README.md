@@ -17,10 +17,10 @@ Ezt a W3.CSS template-et választottam: Marketing/Website Template
 
 ## Mit módosítottam?
 
--
--
--
--
+-Módositottam a html szövegét
+-Módositottam a weboldal kinézetét
+-Módositottam a weboldal képeit
+-Módositottam a weboldal működését
 -
 
 ## Használt technológiák
@@ -32,4 +32,4 @@ Ezt a W3.CSS template-et választottam: Marketing/Website Template
 
 ## Weboldal linkje
 
-GitHub Pages link:
+GitHub Pages link: https://github.com/bodabence67/template-weboldal.git
